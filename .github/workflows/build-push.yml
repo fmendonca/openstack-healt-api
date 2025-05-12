@@ -4,7 +4,7 @@ on:
   push:
     tags:
       - 'v*'  # Executa apenas quando um push de tag como v1.0.0 for feito
-
+  workflow_dispatch:  
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
